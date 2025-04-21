@@ -2,7 +2,7 @@ import Head from "next/head";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillYoutube,
+  AiFillGithub,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -17,6 +17,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import { BsDiscord } from "react-icons/bs";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -30,7 +31,7 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
+          <nav className="py-7  flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl">developedbyed</h1>
             <ul className="flex items-center">
               <li>
@@ -49,30 +50,108 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Dimitri Marco
-            </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Developer and designer.
-            </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
-            </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillYoutube />
+          <div className="text-center flex align-center p-10 py-7">
+            <div>
+              <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+                Srujan Reddy Nadipi
+              </h2>
+              <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+                React Developer and designer.
+              </h3>
+              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+                Freelancer providing services for programming and design content
+                needs. Join me down below and let's get cracking!
+              </p>
+              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+                <a href="https://www.linkedin.com/in/srujan-reddy-b28413259/">
+                  <AiFillLinkedin className="cursor-pointer hover:text-[#0A66C2] transition-colors duration-300" />
+                </a>
+                <a href="https://github.com/srujanreddynadipi">
+                  <AiFillGithub className="cursor-pointer hover:text-[#2b3137] dark:hover:text-white transition-colors duration-300" />
+                </a>
+
+                <AiFillTwitterCircle className="cursor-pointer hover:text-[#1DA1F2] transition-colors duration-300" />
+              </div>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-10 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
+            <h3 className="text-5xl py-1 dark:text-white relative inline-block">
+              <span className="bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent font-bold hover:scale-105 transition-transform duration-300 transform">
+                Skills
+              </span>
+            </h3>
+            <div className="mt-8 space-y-6">
+              <div className="group">
+                <div className="flex justify-between mb-1">
+                  <span className="text-lg font-medium dark:text-white">
+                    React JS
+                  </span>
+                  <span className="text-lg font-medium dark:text-white">
+                    90%
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                  <div className="bg-teal-500 h-2.5 rounded-full w-[90%] group-hover:bg-cyan-500 transition-all duration-500"></div>
+                </div>
+              </div>
+
+              <div className="group">
+                <div className="flex justify-between mb-1">
+                  <span className="text-lg font-medium dark:text-white">
+                    Node JS
+                  </span>
+                  <span className="text-lg font-medium dark:text-white">
+                    85%
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                  <div className="bg-teal-500 h-2.5 rounded-full w-[85%] group-hover:bg-cyan-500 transition-all duration-500"></div>
+                </div>
+              </div>
+
+              <div className="group">
+                <div className="flex justify-between mb-1">
+                  <span className="text-lg font-medium dark:text-white">
+                    Express JS
+                  </span>
+                  <span className="text-lg font-medium dark:text-white">
+                    80%
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                  <div className="bg-teal-500 h-2.5 rounded-full w-[80%] group-hover:bg-cyan-500 transition-all duration-500"></div>
+                </div>
+              </div>
+
+              <div className="group">
+                <div className="flex justify-between mb-1">
+                  <span className="text-lg font-medium dark:text-white">
+                    Java
+                  </span>
+                  <span className="text-lg font-medium dark:text-white">
+                    75%
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                  <div className="bg-teal-500 h-2.5 rounded-full w-[75%] group-hover:bg-cyan-500 transition-all duration-500"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-5xl py-1 dark:text-white relative inline-block">
+              <span className="bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent font-bold hover:scale-105 transition-transform duration-300 transform">
+                Projects
+              </span>
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-teal-500 to-cyan-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></div>
+            </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
@@ -202,6 +281,153 @@ export default function Home() {
                 layout="responsive"
                 src={web6}
               />
+            </div>
+          </div>
+        </section>
+        <section className="py-10">
+          <div>
+            <h3 className="text-5xl py-1 dark:text-white relative inline-block">
+              <span className="bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent font-bold hover:scale-105 transition-transform duration-300 transform">
+                Contact Me
+              </span>
+            </h3>
+            <div className="mt-10 flex flex-col gap-8 md:flex-row">
+              <div className="flex-1 bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
+                <h4 className="text-xl font-semibold text-teal-600 mb-4">
+                  Get in Touch
+                </h4>
+                <form className="space-y-4">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      placeholder="Your Email"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                    />
+                  </div>
+                  <div>
+                    <textarea
+                      placeholder="Your Message"
+                      rows="4"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                    ></textarea>
+                  </div>
+                  <button className="w-full bg-gradient-to-r from-teal-500 to-cyan-500 text-white py-2 rounded-lg hover:opacity-90 transition duration-300">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+
+              <div className="flex-1 bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
+                <h4 className="text-xl font-semibold text-teal-600 mb-4">
+                  Contact Information
+                </h4>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-4">
+                    <svg
+                      className="w-6 h-6 text-teal-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    <p className="dark:text-white">
+                      srujanreddynadipi@gmail.com
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <svg
+                      className="w-6 h-6 text-teal-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                    <p className="dark:text-white">7671879587</p>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <svg
+                      className="w-6 h-6 text-teal-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    <p className="dark:text-white">Hyderabad, India</p>
+                  </div>
+                </div>
+
+                <div className="pt-4 flex flex-col gap-4">
+                  <div className="flex items-center gap-3">
+                    <a
+                      href="https://www.linkedin.com/in/srujan-reddy-b28413259/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AiFillLinkedin className="text-3xl text-teal-500 hover:text-[#0A66C2] transition-colors duration-300 cursor-pointer" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/srujan-reddy-b28413259/">
+                      {" "}
+                      <span className="dark:text-white">Srujan reddy</span>
+                    </a>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <a
+                      href="https://github.com/srujanreddynadipi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AiFillGithub className="text-3xl text-teal-500 hover:text-[#2b3137] dark:hover:text-white transition-colors duration-300 cursor-pointer" />
+                    </a>
+                    <a href="https://github.com/srujanreddynadipi">
+                      {" "}
+                      <span className="dark:text-white">srujanreddynadipi</span>
+                    </a>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <a
+                      href="https://discord.com/users/your-discord-id"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <BsDiscord className="text-3xl text-teal-500 hover:text-[#5865F2] transition-colors duration-300 cursor-pointer" />
+                    </a>
+                    <span className="dark:text-white">srujanreddy2508</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
